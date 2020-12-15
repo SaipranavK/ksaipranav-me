@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'saipranav-me';
+
+  navClickItem: string = window.location.href.replace("https://ksaipranav.me/",'');
+  
+  ngOnInit(){
+    console.log(this.navClickItem);
+  }
+
+  navClick(item:string){
+    this.navClickItem = item;
+  }
+
 }

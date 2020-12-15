@@ -1,1 +1,94 @@
-/* You can add global styles to this file, and also import other style files */
+/* body, html */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+/* fonts */
+@font-face {
+  font-family: "sans-pro-regular";
+  src: url("assets/fonts/sans-pro/SF-Pro-Display-Regular.otf");
+}
+
+@font-face {
+  font-family: "sans-pro-semi-bold";
+  src: url("assets/fonts/sans-pro/SF-Pro-Display-Semibold.otf");
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "sans-pro-semi-bold";
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+/* components */
+button,
+a,
+span,
+ul,
+li,
+ul,
+p,
+small,
+b {
+  font-family: "sans-pro-regular";
+}
+
+/* anchors */
+a {
+  text-decoration: none !important;
+  font-size: large;
+  color: grey;
+}
+
+a.alternative{
+  text-decoration: none !important;
+  font-size: large;
+  color: black;
+}
+
+a.alternative-l{
+  text-decoration: none !important;
+  font-size: large;
+  color: #0d6efd;
+}
+
+a:hover{
+  color:#0d6efd;
+}
+
+a.alternative:hover{
+  color: #0d6efd;
+}
+
+a.alternative-l:hover{
+  color: blue;
+}
+
+.active {
+  color: #000;
+}
+
+/* footer */
+footer {
+  flex-shrink: 0;
+}
