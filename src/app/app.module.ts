@@ -7,6 +7,7 @@ import { RootComponent } from './root/root.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ResearchComponent } from './research/research.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ResearchComponent } from './research/research.component';
     RootComponent,
     TimelineComponent,
     ProjectsComponent,
-    ResearchComponent
+    ResearchComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
